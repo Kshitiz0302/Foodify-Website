@@ -38,11 +38,11 @@ Foodify is a MERN stack-based restaurant website that allows users to browse, or
 
 ## Deployment
 
-The application is deployed and can be accessed at [Foodify](https://foodify-frontend.onrender.com/).
+The application is deployed and can be accessed at [Foodify](https://foodify-website.onrender.com/).
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project directory, you can run. Firstly change the frontend and backend address to localhost:{port} you are using. Then:
 
 ### `npm run start`
 
@@ -68,4 +68,3 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
