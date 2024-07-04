@@ -12,7 +12,7 @@ global.foodData = require('./db')(function call(err, data, CatData) {
 });
 
 const corsOptions = {
-  origin: 'https://foodify-frontend.https://foodify-website.onrender.com/.com', // frontend URL
+  origin: 'https://foodify-website.onrender.com', // frontend URL
   optionsSuccessStatus: 200, // Some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 
@@ -30,7 +30,7 @@ app.use('/api/auth', require('./Routes/Auth'));
 
 // Start the server
 app.listen(port, () => {
-  console.log(`Example app listening on https://foodify-backend-4l21.https://foodify-website.onrender.com/.com/`);
+  console.log(`Example app listening on https://foodify-website-backend.onrender.com`);
 });
 
 
