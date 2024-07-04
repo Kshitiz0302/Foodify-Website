@@ -8,7 +8,7 @@ export default function Home() {
   const [foodItems, setFoodItems] = useState([])
   const [search, setSearch] = useState('')
   const loadFoodItems = async () => {
-    let response = await fetch("https://foodify-backend-4l21.onrender.com/api/auth/foodData", {
+    let response = await fetch("https://foodify-backend-4l21.https://foodify-website.onrender.com/.com/api/auth/foodData", {
       
       
       method: 'POST',
