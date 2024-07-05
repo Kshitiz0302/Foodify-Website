@@ -3,9 +3,10 @@
 
 Foodify is a MERN stack-based restaurant website that allows users to browse, order, and manage their meals seamlessly. The application is fully responsive and uses Bootstrap for styling, ensuring a consistent and polished user experience across devices.
 
-## Getting Started with Create React App
+## Deployment
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The application is deployed and can be accessed at [Foodify](https://foodify-website.onrender.com/).
+It might take some time during initial loading. Please be patient.
 
 ## Screenshots
 
@@ -37,9 +38,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - **Database**: MongoDB Atlas
 - **Authentication**: JSON Web Tokens (JWT)
 
-## Deployment
 
-The application is deployed and can be accessed at [Foodify](https://foodify-website.onrender.com/).
+## Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
