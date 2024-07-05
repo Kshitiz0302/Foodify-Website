@@ -1,10 +1,11 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Foodify
+# Foodify
 
 Foodify is a MERN stack-based restaurant website that allows users to browse, order, and manage their meals seamlessly. The application is fully responsive and uses Bootstrap for styling, ensuring a consistent and polished user experience across devices.
+
+## Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Screenshots
 
