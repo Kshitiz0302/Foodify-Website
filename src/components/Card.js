@@ -22,12 +22,18 @@ export default function Card(props) {
     }
   }
   const handleQty = (e) => {
+    if (!localStorage.getItem("token")) {
+      navigate("/login")
+    }
     setQty(e.target.value);
   }
   const handleOptions = (e) => {
     setSize(e.target.value);
   }
   const handleAddToCart = async () => {
+    if (!localStorage.getItem("token")) {
+      navigate("/login")
+    }
     let food = []
     for (const item of data) {
       if (item.id === foodItem._id) {
