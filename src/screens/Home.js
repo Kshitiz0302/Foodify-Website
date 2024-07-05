@@ -7,7 +7,9 @@ export default function Home() {
   const [foodCat, setFoodCat] = useState([])
   const [foodItems, setFoodItems] = useState([])
   const [search, setSearch] = useState('')
+  const [loading, setLoading] = useState(false);
   const loadFoodItems = async () => {
+    setLoading(true);
     let response = await fetch("https://foodify-website-backend.onrender.com/api/auth/foodData", {
       
       
@@ -17,11 +19,12 @@ export default function Home() {
       }
 
     });
-    response = await response.json()
+    response = await response.json();
     
     
-    setFoodItems(response[0])
-    setFoodCat(response[1])
+    setFoodItems(response[0]);
+    setFoodCat(response[1]);
+    setLoading(false);;
   }
 
   useEffect(() => {
@@ -63,8 +66,17 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <div className='container'> {/* boootstrap is mobile first */}
-        {
+      <div className='container'>
+                 {loading ? (
+          <div className="text-center">
+            <div className="spinner-border mt-4" role="status">
+              <span className="sr-only"></span>
+            </div>
+            <div className="mt-3  text-center">
+            <u>Fun Fact</u>:   The longer you wait, the better it tastes 😉
+          </div>
+          </div>
+        ) :
           foodCat.length > 0
             ? foodCat.map((data) => {
               return (
@@ -87,7 +99,7 @@ export default function Home() {
                 </div>
               )
             })
-            : "Yoooo"}
+            : "Fetching"}
       </div>
       <Footer />
     </div>
